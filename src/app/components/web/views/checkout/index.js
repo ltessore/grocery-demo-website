@@ -260,7 +260,7 @@ class Checkout extends Component {
                             </div>
                             <div className="col-md-4">
                                 <div className="card">
-                                    <h5 className="card-header">My Cart <span className="text-secondary float-right">({cartItems.length} item)</span></h5>
+                                    <h5 className="card-header">Mi Pedido <span className="text-secondary float-right">({cartItems.length} item)</span></h5>
                                     {
                                         cartItems.map((row, index) => (
                                             <div className="card-body pt-0 pr-0 pl-0 pb-0" key={index}>

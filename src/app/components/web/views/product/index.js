@@ -22,7 +22,7 @@ class Productview extends Component {
                 this.setState({ list: p.data, isloaded: true })
             }
         } catch (e) {
-            NotificationManager.error("Empty data in category", "Data");
+            NotificationManager.error("Empty data in category!", lastSegment);
         }
 
         //category filter

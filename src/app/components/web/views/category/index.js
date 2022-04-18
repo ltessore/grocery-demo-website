@@ -56,8 +56,8 @@ export default class Category extends Component {
                                 <Link to={{
                                     pathname: `/shop/personal-care`,
                                 }}>
-                                    <img className="img-fluid" src="img/category/personalcare.png" alt="personalcare" />
-                                    <h6>Personal Care</h6>
+                                    <img className="img-fluid" src="https://saboryestilo.com.mx/wp-content/uploads/2020/01/tips-para-hacer-la-mejor-carne-asada-1200x675.jpg" alt="personalcare" />
+                                    <h6>Parrilla</h6>
                                 </Link>
                             </div>
                         </div>

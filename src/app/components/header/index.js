@@ -51,7 +51,7 @@ class Navigation extends Component {
                     </div>
                     <nav className="navbar navbar-light navbar-expand-lg bg-dark bg-faded osahan-menu">
                         <div className="container-fluid">
-                            <a className="navbar-brand" href="/" style={{color: '#fff'}}> Big SuperMarket </a>
+                            <a className="navbar-brand" href="/" style={{color: '#fff'}}> Ecosistema Gastronómico </a>
                             <button className="navbar-toggler navbar-toggler-white" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                                 <span className="navbar-toggler-icon" />
                             </button>

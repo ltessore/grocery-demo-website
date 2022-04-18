@@ -1,3 +1,27 @@
+
+
+
+
+
+
+Instalación:
+ ## npm install
+
+ Para correrlo:
+ ## npm start
+
+ Backend:
+ ## git clone https://github.com/ltessore/jsonserver.git
+
+
+
+
+/*************************************************************/
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

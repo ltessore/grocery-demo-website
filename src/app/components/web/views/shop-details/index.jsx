@@ -17,14 +17,17 @@ class Shopdetails extends Component {
     async componentDidMount() {
         window.scrollTo(0, 0);
         let url = window.location.href.split('/');
+        console.log("url->"+url);
         var lastSegment = url.pop() || url.pop();
+        console.log("lastSegment->"+lastSegment);
         try {
             let p = await GetProductDetails.getAllProductList(lastSegment);
+            console.log(p);
             if (p) {
-                this.setState({ list: p.data.products, isloaded: true })
+                this.setState({ list: p, isloaded: true })
             }
         } catch (e) {
-            NotificationManager.error("Empty data in category", "Data");
+            NotificationManager.error("Empty data in category!!", "Data");
         }
     }
     onLoadMore =event=> {
@@ -100,12 +103,13 @@ class Shopdetails extends Component {
                                                                 </div>
                                                                 <div className="product-body">
                                                                     <h5>{row.name}</h5>
-                                                                    <h6><strong><span className="mdi mdi-approval" /> Available in</strong> - {row.unitSize}</h6>
+                                                                    <h6>{row.descripcion}</h6>
+                                                                    {/* <h6><strong><span className="mdi mdi-approval" /> Available isn</strong> - {row.unitSize}</h6> */}
                                                                 </div>
                                                             </Link>
                                                             <div className="product-footer">
-                                                                <button type="button" className="btn btn-secondary btn-sm float-right" onClick={() => this.props.addToCart(row)}><i className="mdi mdi-cart-outline" /> Add To Cart</button>
-                                                                <p className="offer-price mb-0">&#x20B9;{row.netPrice}  <i className="mdi mdi-tag-outline" /><br /><span className="regular-price">&#x20B9;{row.price} </span></p>
+                                                                <button type="button" className="btn btn-secondary btn-sm float-right" onClick={() => this.props.addToCart(row)}><i className="mdi mdi-cart-outline" /> Agregar al pedido</button>
+                                                                <p className="offer-price mb-0">${row.netPrice}  <i className="mdi mdi-tag-outline" /><br /><span className="regular-price">${row.price} </span></p>
                                                             </div>
                                                         </div>
                                                     </div>

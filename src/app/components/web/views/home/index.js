@@ -9,7 +9,6 @@ export default class Home extends Component {
             <div className="wrapper">
                 <Bannerslider />
                 <Bestofferbanner />
-                <Topstample />
             </div>
         )
     }

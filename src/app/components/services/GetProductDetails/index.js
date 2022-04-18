@@ -18,11 +18,14 @@ const getProductById = async (id) => {
 
 const getAllProductList = async (slug) => {
     try {
+        console.log("result->"+Apis.GetAllProductList+slug);
         let result = await api.get(Apis.GetAllProductList+slug);
         if (result.data.error) {
+            console.log("Error->"+result.data.error);
             NotificationManager.error(result.data.error);
             return null;
         }
+        console.log("no error->"+result.data);
         return result.data;
     } catch (error) {
         console.log(error);
