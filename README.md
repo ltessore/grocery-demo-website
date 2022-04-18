@@ -5,13 +5,13 @@
 
 
 Instalación:
- ## npm install
+ ## `npm install`
 
  Para correrlo:
- ## npm start
+ ## `npm start`
 
  Backend:
- ## git clone https://github.com/ltessore/jsonserver.git
+ ## `git clone https://github.com/ltessore/jsonserver.git`
 
 
 
