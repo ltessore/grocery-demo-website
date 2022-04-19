@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 import Header from '../header';
 import Footer from '../footer';
 import Home from '../web/views/home';
@@ -20,7 +20,8 @@ export default class rootRoutes extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route exact path='/' component={Home} />
+                    <Route exact path='/'><Redirect to="/home"/></Route>
+                    <Route exact path='/home' component={Home} />
                     <Route exact path='/p/:slug/:id' component={Singleproduct} />
                     <Route exact path='/shop/:slug' component={Shopdetails} />
                     <Route path='/checkout' component={Checkout} /> 
