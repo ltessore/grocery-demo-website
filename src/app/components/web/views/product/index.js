@@ -108,14 +108,14 @@ class Productview extends Component {
                                     <a href="#"><span className="mdi mdi-home" /> Home</a> <span className="mdi mdi-chevron-right" /> <a href="#">Fruits &amp; Vegetables</a> <span className="mdi mdi-chevron-right" /> <a href="#">Fruits</a>
                                     <div className="btn-group float-right mt-2">
                                         <button type="button" className="btn btn-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Sort by Products &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                            Orden de los productos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                         </button>
                                         <div className="dropdown-menu dropdown-menu-right">
-                                            <a className="dropdown-item" href="#">Relevance</a>
-                                            <a className="dropdown-item" href="#">Price (Low to High)</a>
-                                            <a className="dropdown-item" href="#">Price (High to Low)</a>
-                                            <a className="dropdown-item" href="#">Discount (High to Low)</a>
-                                            <a className="dropdown-item" href="#">Name (A to Z)</a>
+                                            <a className="dropdown-item" href="#">Más relevantes</a>
+                                            <a className="dropdown-item" href="#">Menor precio</a>
+                                            <a className="dropdown-item" href="#">Mayor precio</a>
+                                            <a className="dropdown-item" href="#">Descuento</a>
+                                            <a className="dropdown-item" href="#">Nombre (A to Z)</a>
                                         </div>
                                     </div>
                                     <h5 className="mb-3">Fruits</h5>

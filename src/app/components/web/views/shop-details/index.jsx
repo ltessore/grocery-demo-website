@@ -46,7 +46,7 @@ class Shopdetails extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-md-12">
-                                <a href="#"><strong><span className="mdi mdi-home" /> Home</strong></a> <span className="mdi mdi-chevron-right" /> <a href="#">Fruits &amp; Vegetables</a> <span className="mdi mdi-chevron-right" /> <a href="#">Fruits</a>
+                                <a href="#"><strong><span className="mdi mdi-home" /> Home</strong></a> <span className="mdi mdi-chevron-right" /> <a href="#">Platos principales</a> <span className="mdi mdi-chevron-right" /> <a href="#">Parrilla</a>
                             </div>
                         </div>
                     </div>
@@ -59,18 +59,18 @@ class Shopdetails extends Component {
                             <div className="col-lg-12">
                                 <div className="product-top-dt">
                                     <div className="product-left-title">
-                                        <h2>All Products</h2>
+                                        <h2>Todos los productos</h2>
                                     </div>
                                     <Filterbycategory onSelectFilterCategory={this.handleChangeByCategory.bind(this)} />
                                     <div className="product-sort">
                                         <select className="form-control">
-                                            <option className="item" value={0}>Sort by Products</option>
-                                            <option className="item" value={1}>Price - Low to High</option>
-                                            <option className="item" value={2}>Price - High to Low</option>
-                                            <option className="item" value={3}>Alphabetical</option>
-                                            <option className="item" value={4}>Saving - High to Low</option>
-                                            <option className="item" value={5}>Saving - Low to High</option>
-                                            <option className="item" value={6}>% Off - High to Low</option>
+                                            <option className="item" value={0}>Orden de productos</option>
+                                            <option className="item" value={1}>Menor precio</option>
+                                            <option className="item" value={2}>Mayor precio</option>
+                                            <option className="item" value={3}>Por nombre</option>
+                                            <option className="item" value={4}>Saving - High to Low(quitar)</option>
+                                            <option className="item" value={5}>Saving - Low to High(1uitar)</option>
+                                            <option className="item" value={6}>% Off</option>
                                         </select>
                                     </div>
                                 </div>
@@ -97,7 +97,7 @@ class Shopdetails extends Component {
                                                                 state: row
                                                             }}>
                                                                 <div className="product-header">
-                                                                    <span className="badge badge-success">{row.discountPer}% OFF</span>
+                                                                    {/* <span className="badge badge-success">{row.discountPer}% OFF</span> */}
                                                                     <img className="img-fluid" src={row.photo} alt="product" />
                                                                     <span className="veg text-success mdi mdi-circle" />
                                                                 </div>
@@ -108,8 +108,8 @@ class Shopdetails extends Component {
                                                                 </div>
                                                             </Link>
                                                             <div className="product-footer">
-                                                                <button type="button" className="btn btn-secondary btn-sm float-right" onClick={() => this.props.addToCart(row)}><i className="mdi mdi-cart-outline" /> Agregar al pedido</button>
-                                                                <p className="offer-price mb-0">${row.netPrice}  <i className="mdi mdi-tag-outline" /><br /><span className="regular-price">${row.price} </span></p>
+                                                                <button type="button" className="btn btn-secondary btn-sm float-right" onClick={() => this.props.addToCart(row)}><i className="mdi mdi-silverware-variant" /> Agregar al pedido</button>
+                                                                <p className="offer-price mb-0">${row.netPrice}  <i className="mdi mdi-tag-outline" /><br /> </p>
                                                             </div>
                                                         </div>
                                                     </div>

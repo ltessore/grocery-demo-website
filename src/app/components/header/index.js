@@ -38,7 +38,7 @@ class Navigation extends Component {
         return (
             <div>
                 <header className="header clearfix">
-                    <div className="navbar-top bg-success pt-2 pb-2">
+                    {/* <div className="navbar-top bg-success pt-2 pb-2">
                         <div className="container-fluid">
                             <div className="row">
                                 <div className="col-lg-12 text-center">
@@ -48,7 +48,7 @@ class Navigation extends Component {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <nav className="navbar navbar-light navbar-expand-lg bg-dark bg-faded osahan-menu">
                         <div className="container-fluid">
                             <a className="navbar-brand" href="/" style={{color: '#fff'}}> Ecosistema Gastronómico </a>
@@ -59,9 +59,9 @@ class Navigation extends Component {
                                 <div className="navbar-nav mr-auto mt-2 mt-lg-0 margin-auto top-categories-search-main">
                                     <div className="top-categories-search" onSubmit={this.handleClickSearch}>
                                         <div className="input-group">
-                                            <input className="form-control" placeholder="Search products in Your City" aria-label="Search products in Your City" type="text" name="searchtxt" value={searchtxt} onChange={(e)=>this.handleChange(e)}/>
+                                            <input className="form-control" placeholder="Busque productos en el restaurant" aria-label="Busque productos en el restaurant" type="text" name="searchtxt" value={searchtxt} onChange={(e)=>this.handleChange(e)}/>
                                             <span className="input-group-btn">
-                                                <button className="btn btn-secondary" type="submit" onClick={this.handleClickSearch}><i className="mdi mdi-file-find" /> Search</button>
+                                                <button className="btn btn-secondary" type="submit" onClick={this.handleClickSearch}><i className="mdi mdi-file-find" /> Buscar</button>
                                             </span>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@ class Navigation extends Component {
                                 <div className="my-2 my-lg-0">
                                     <ul className="list-inline main-nav-right" >
                                         <li className="list-inline-item">
-                                            <a data-target="#bd-example-modal" data-toggle="modal" className="btn btn-link" style={token ? { display: 'none' } : { display: 'block' }}><i className="mdi mdi-account-circle" /> Login/Sign Up</a>
+                                            <a data-target="#bd-example-modal" data-toggle="modal" className="btn btn-link" style={token ? { display: 'none' } : { display: 'block' }}><i className="mdi mdi-account-circle" /> Acceder/Registrarse</a>
                                             <div className="dropdown" style={token ? { display: 'block' } : { display: 'none' }}>
                                                 <button className="btn btn-account dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                                     {userName}

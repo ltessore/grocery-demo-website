@@ -15,7 +15,7 @@ class Cartsidebar extends Component {
         const { cartItems } = this.props;
         return (
             <div>
-                <span data-toggle="offcanvas" className="btn btn-link border-none"><i className="mdi mdi-cart" /> Mi Pedido<small className="cart-value">{cartItems.length}</small></span>
+                <span data-toggle="offcanvas" className="btn btn-link border-none"><i className="mdi mdi-silverware-variant" /> Mi Pedido<small className="cart-value">{cartItems.length}</small></span>
                 <div className="cart-sidebar">
                     <div className="bs-canvas-header side-cart-header p-3 ">
                         <div className="d-inline-block  main-cart-title">Mi Pedido <span>({cartItems.length} Items)</span></div>
@@ -67,7 +67,7 @@ class Cartsidebar extends Component {
                                 ), 0)/10}</strong></p>
 
                         </div>
-                        <a href="/checkout"><button className="btn btn-secondary btn-lg btn-block text-left" type="button"><span className="float-left"><i className="mdi mdi-cart-outline" /> Enviar pedido </span><span className="float-right"><strong>
+                        <a href="/checkout"><button className="btn btn-secondary btn-lg btn-block text-left" type="button"><span className="float-left"><i className="mdi mdi-cart-outline" />Enviar</span><span className="float-right"><strong>
                         ${cartItems.reduce((sum, i) => (
                                 sum += i.qty * i.netPrice
                             ), 0)}

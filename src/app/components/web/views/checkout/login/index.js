@@ -98,7 +98,7 @@ export default class Login extends Component {
                                                     {/* Tab panes */}
                                                     <div className="tab-content">
                                                         <div className="tab-pane active" id="login" role="tabpanel">
-                                                            <h5 className="heading-design-h5">Login to your account</h5>
+                                                            <h5 className="heading-design-h5">Ingrese en su cuenta</h5>
                                                             <fieldset className="form-group">
                                                                 <label>Enter Email/Mobile number</label>
                                                                 <input type="email" className="form-control" name="email" value={email} onChange={this.handleChange} />
