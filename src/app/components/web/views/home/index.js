@@ -12,6 +12,9 @@ export default class Home extends Component {
         const querystring = window.location.search
         const params = new URLSearchParams(querystring);
         console.log("El nùmero de mesa es : "+params.get('mesaId'));
+        this.state = {
+            mesaId:params.get('mesaId')
+        }
     }
     
     render() {
