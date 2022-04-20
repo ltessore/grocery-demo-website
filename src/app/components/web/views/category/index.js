@@ -44,7 +44,7 @@ export default class Category extends Component {
                         <div className="item">
                             <div className="category-item">
                                 <Link to={{
-                                    pathname: `/shop/grocery-staples`,
+                                    pathname: `/shop/dish`,
                                 }}>
                                     <img className="img-fluid" src="img/category/grocerystample.jpg" alt="grocery-stamples" />
                                     <h6>Grocery &amp; Staples</h6>
@@ -54,7 +54,7 @@ export default class Category extends Component {
                         <div className="item">
                             <div className="category-item">
                                 <Link to={{
-                                    pathname: `/shop/personal-care`,
+                                    pathname: `/shop/drink`,
                                 }}>
                                     <img className="img-fluid" src="https://saboryestilo.com.mx/wp-content/uploads/2020/01/tips-para-hacer-la-mejor-carne-asada-1200x675.jpg" alt="personalcare" />
                                     <h6>Parrilla</h6>
@@ -64,7 +64,7 @@ export default class Category extends Component {
                         <div className="item">
                             <div className="category-item">
                                 <Link to={{
-                                    pathname: `/shop/household-items`,
+                                    pathname: `/shop/dessert`,
                                 }}>
                                     <img className="img-fluid" src="img/category/household.png" alt="household-imtes" />
                                     <h6>Household Needs</h6>
@@ -74,7 +74,7 @@ export default class Category extends Component {
                         <div className="item">
                             <div className="category-item">
                                 <Link to={{
-                                    pathname: `/shop/home-kitchen`,
+                                    pathname: `/shop/extra`,
                                 }}>
                                     <img className="img-fluid" src="img/category/kitchen.png" alt="kitchen" />
                                     <h6>Home &amp; Kitchen</h6>

@@ -98,18 +98,19 @@ class Shopdetails extends Component {
                                                             }}>
                                                                 <div className="product-header">
                                                                     {/* <span className="badge badge-success">{row.discountPer}% OFF</span> */}
-                                                                    <img className="img-fluid" src={row.photo} alt="product" />
+                                                                    {/* <img className="img-fluid" src={row.image} alt="product" /> */}
+                                                                    <img className="img-fluid" src="https://media.istockphoto.com/photos/paper-plate-next-to-plastic-utensils-on-a-blue-table-picture-id154956715?k=20&m=154956715&s=612x612&w=0&h=9PrQFfcTN-yUZIB79nX4hkdaS1OC067o3OxUUIggpdk=" alt="product" />
                                                                     <span className="veg text-success mdi mdi-circle" />
                                                                 </div>
                                                                 <div className="product-body">
                                                                     <h5>{row.name}</h5>
-                                                                    <h6>{row.descripcion}</h6>
+                                                                    <h6>{row.description}</h6>
                                                                     {/* <h6><strong><span className="mdi mdi-approval" /> Available isn</strong> - {row.unitSize}</h6> */}
                                                                 </div>
                                                             </Link>
                                                             <div className="product-footer">
                                                                 <button type="button" className="btn btn-secondary btn-sm float-right" onClick={() => this.props.addToCart(row)}><i className="mdi mdi-silverware-variant" /> Agregar al pedido</button>
-                                                                <p className="offer-price mb-0">${row.netPrice}  <i className="mdi mdi-tag-outline" /><br /> </p>
+                                                                <p className="offer-price mb-0">${row.price}  <i className="mdi mdi-tag-outline" /><br /> </p>
                                                             </div>
                                                         </div>
                                                     </div>
