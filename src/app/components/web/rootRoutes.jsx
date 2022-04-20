@@ -32,6 +32,7 @@ export default class rootRoutes extends Component {
                     <Route path='/account' component={Account} />                    
                     <Route exact path='/login' component={Login} />
                     <Route exact path='/register' component={Register} />
+                    <Route path="/notfound" component={NotFound} />
                     <Route component={NotFound} />
                 </Switch>
                 <Footer />
